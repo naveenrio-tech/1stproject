@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WT LAB MANUAL PROGRAM NO.3</title>
+</head>
+<style>
+h1{
+color:red;
+text-align:center;
+}
+.textbox1 {
+color:blue;
+font-size:30px;
+font-weight:bold;
+}
+</style>
+<body>
+<center>
+<h1>SELECT THE COUNTRY NAME TO FIND ITS CAPITAL</h1>
+<form name="myform">
+Select Country 
+<select name="country" id="sbox1" onchange="myFunction()" required>
+<option value=""></option>
+<option value="NEW DELHI">INDIA</option>
+<option value="CANBERRA">AUSTRALIA</option>
+<option value="WASHINGTON D.C">AMERICA</option>
+<option value="LONDON">UNITED KINGDOM</option>
+<option value="BERLIN">GERMANY</option>
+</select><br><br>
+Capital <input type="text" class="textbox1" id="sbox2" name="capital">
+</form>
+</center>
+<script>
+function myFunction() {
+var a = document.getElementById("sbox1").value;
+document.getElementById("sbox2").value = a;
+}
+</script>
+</body>
+</html>
